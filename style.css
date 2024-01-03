@@ -21,34 +21,35 @@ body {
 }
 
 main {
-    max-width: 320px;
-    margin: auto;
-    padding: 5.4rem 3.6rem;
+  max-width: 320px;
+  margin: auto;
+  padding: 5.4rem 3.6rem;
+  box-sizing: content-box; /* Ganha mais espaços permitindo q o conteúdo preencha toda a linha possível, respeitando o padding.*/
 
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
 }
 
 .recipe {
-    display: flex;
-    flex-direction: column;
-    gap: 4.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.4rem;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 h1,
 h2 {
   font-size: 2.8rem;
   font-weight: 700;
-  
 }
 
-p, ul, ol {
+p,
+ul,
+ol {
   font-size: 1.4rem;
   font-weight: 400;
 }
-
