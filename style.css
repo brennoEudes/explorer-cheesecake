@@ -28,13 +28,14 @@ main {
 
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 3.6rem;
 }
 
-.recipe {
+.recipe,
+.ingredients {
   display: flex;
   flex-direction: column;
-  gap: 4.4rem;
+  gap: 3.2rem;
 }
 
 img {
@@ -47,9 +48,34 @@ h2 {
   font-weight: 700;
 }
 
+strong {
+  font-weight: 700;
+}
+
 p,
 ul,
 ol {
   font-size: 1.4rem;
   font-weight: 400;
+}
+
+button {
+  background: #a54328;
+  width: 12rem;
+  height: 3.2rem;
+  padding: 1.2rem;
+
+  border: none;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+
 }
