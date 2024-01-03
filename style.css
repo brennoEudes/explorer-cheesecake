@@ -2,8 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  -webkit-font-smoothing: antialised; /* Deixa as fontes + definidas em browser c/motor webkit */
+  -moz-osx-font-smoothing: grayscale; /* Msm de acima p/ o browser Mozila */
+
 }
 
-body {
+:root {
   font-family: "Source Serif 4", serif;
 }
