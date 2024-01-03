@@ -77,5 +77,19 @@ button {
   font-weight: 500;
   font-size: 1.4rem;
   text-transform: capitalize;
+}
 
+/* MEDIA QUERIES */
+@media (min-width: 768px) {
+
+    main {
+        flex-direction: row;
+        max-width: fit-content; /* Largura máx c/ encaixe perfeito com o tamanho disponível p/conteúdo */
+        gap: 8rem;
+    }
+
+    main > div {
+        flex: 1; /* Torna as divs equivalentes */
+        max-width: 50rem;
+    }
 }
