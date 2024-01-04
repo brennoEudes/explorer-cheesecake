@@ -48,6 +48,13 @@ h2 {
   font-weight: 700;
 }
 
+/* CLAMP - Ideia: (mín, ideal, máx) */
+/* h1,
+h2 {
+  font-size: clamp(2.8rem, 2vw + 1rem, 4rem) ;
+  font-weight: 700;
+} */
+
 strong {
   font-weight: 700;
 }
@@ -102,14 +109,11 @@ button:hover {
     max-width: 50rem;
   }
 
+  /* Desabilitar, se for usar o clamp!*/
   h1,
   h2 {
     font-size: 4rem;
   }
-
-  /* strong {
-      font-weight: 700;
-    } */
 
   p,
   ul,
