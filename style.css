@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 
-  -webkit-font-smoothing: antialised; /* Deixa as fontes + definidas em browser c/motor webkit */
+  -webkit-font-smoothing: antialised; /* Deixa as fontes + definidas em browsers c/motor webkit */
   -moz-osx-font-smoothing: grayscale; /* Msm de acima p/ o browser Mozila */
 }
 
@@ -24,7 +24,7 @@ main {
   max-width: 320px;
   margin: auto;
   padding: 5.4rem 3.6rem;
-  box-sizing: content-box; /* Ganha mais espaços permitindo q o conteúdo preencha toda a linha possível, respeitando o padding.*/
+  box-sizing: content-box; /* Oferece mais espaços ao conteúdo permitindo preencher toda a linha possível, respeitando o padding.*/
 
   display: flex;
   flex-direction: column;
@@ -59,6 +59,10 @@ ol {
   font-weight: 400;
 }
 
+a {
+  text-decoration: none;
+}
+
 button {
   background: #a54328;
   width: 12rem;
@@ -79,17 +83,44 @@ button {
   text-transform: capitalize;
 }
 
+button:hover {
+  background: #dd6b4b;
+}
+
 /* MEDIA QUERIES */
 @media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    max-width: fit-content; /* Largura máx c/ encaixe perfeito com o tamanho disponível p/conteúdo */
+    gap: 10rem;
 
-    main {
-        flex-direction: row;
-        max-width: fit-content; /* Largura máx c/ encaixe perfeito com o tamanho disponível p/conteúdo */
-        gap: 8rem;
-    }
+    padding: 9.5rem 14.5rem;
+  }
 
-    main > div {
-        flex: 1; /* Torna as divs equivalentes */
-        max-width: 50rem;
-    }
+  main > div {
+    flex: 1; /* Torna as divs equivalentes */
+    max-width: 50rem;
+  }
+
+  h1,
+  h2 {
+    font-size: 4rem;
+  }
+
+  /* strong {
+      font-weight: 700;
+    } */
+
+  p,
+  ul,
+  ol,
+  strong {
+    font-size: 2rem;
+  }
+
+  button {
+    width: 14rem;
+    height: 4.5rem;
+    padding: 1.6rem;
+  }
 }
